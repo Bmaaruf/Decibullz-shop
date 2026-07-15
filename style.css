@@ -15,7 +15,7 @@ nav {
   height: 8vh;
   align-items: center;
   background-color: white;
-  margin: 0 3rem;
+  margin: 0 1rem;
   padding: 0 2em;
 }
 
@@ -24,6 +24,7 @@ nav {
     display: none;
   }
 }
+
 .services,
 .links {
   display: flex;
@@ -52,7 +53,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0 3rem;
+  margin: 0 1rem;
   background-position: center;
   background-size: cover;
   gap: 1rem;
@@ -70,19 +71,15 @@ main {
   font-size: 12px;
   font-weight: 700;
 }
-@media (max-width: 580px) {
-  main {
-    text-align: center;
-  }
-}
+
 .upper {
   position: relative;
 }
 
 form {
   position: absolute;
-  right: 32px;
-  bottom: 32px;
+  right: 3rem;
+  bottom: 3rem;
   max-width: 240px;
   display: flex;
   align-items: center;
@@ -125,4 +122,18 @@ input:focus-visible {
 }
 .subscribe-button:hover {
   background-color: rgb(63, 63, 63);
+}
+@media (max-width: 600px) {
+  main {
+    text-align: center;
+    margin: 0;
+  }
+  form {
+    right: 1rem;
+    bottom: 2rem;
+  }
+
+  nav {
+    margin: 0;
+  }
 }
