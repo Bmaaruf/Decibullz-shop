@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-transform: uppercase;
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  background-color: white;
+  margin: 0 3rem;
+  padding: 0 2em;
+}
+
+@media (max-width: 830px) {
+  .services a {
+    display: none;
+  }
+}
+.services,
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.services a:link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  transition: 0.1s;
+}
+.services a:hover {
+  text-decoration: underline red;
+}
+.links i:hover {
+  color: grey;
+}
+
+main {
+  background-image: url(img.png);
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 3rem;
+  background-position: center;
+  background-size: cover;
+  gap: 1rem;
+}
+.diff {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.learn-more {
+  padding: 0.6em 3em;
+  font: inherit;
+  text-transform: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+@media (max-width: 580px) {
+  main {
+    text-align: center;
+  }
+}
+.upper {
+  position: relative;
+}
+
+form {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 0.5em;
+  gap: 8px;
+}
+input {
+  font-size: 12px;
+  padding: 0.4em;
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  font: inherit;
+}
+input::placeholder {
+  font-size: 10px;
+}
+input:hover,
+input:focus-visible {
+  outline: none;
+  border: 1px solid black;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 8px;
+  border-radius: 2px;
+  font: inherit;
+}
+.subscribe-button:hover {
+  background-color: rgb(63, 63, 63);
+}
